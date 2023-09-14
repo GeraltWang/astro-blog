@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import Footer from '../components/Footer.astro'
 
 const pageTitle = 'About'
 
@@ -54,6 +55,7 @@ const goal = 3
 		{goal === 3 ? <p>我的目标是在三天内完成。</p> : <p>我的目标不是3天。</p>}
 		<a href='/'>返回首页</a>
 	</main>
+	<Footer />
 </Layout>
 <style define:vars={{skillColor}}>
 	main {
